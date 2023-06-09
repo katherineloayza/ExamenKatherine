@@ -35,15 +35,11 @@ public class CountryRepository {
 		domingo.setTraduccion value:"sunday";
 		domingo.put(domingo.getName(),domingo);
 
-
-		
-		
-
 		
 	}
 
-	public Country findCountry(String name) {
-		Assert.notNull(name, "The country's name must not be null");
-		return countries.get(name);
+	public Dia FindDia findCountry(String name) {
+		Assert.notNull(name, "The day's name must not be null");
+		return dias.get(name);
 	}
 }
